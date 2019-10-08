@@ -11,17 +11,19 @@ public class problem1 {
         int run = 0;
         int a;
         int b;
+        int response;
 
         do
         {
+            response = random.nextInt(4) + 1;
             a = random.nextInt(9) + 1;
             b = random.nextInt(9) + 1;
-            GenerateQuestion(a,b,scr);
+            GenerateQuestion(a,b,scr,response);
         }while(run == 0);
 
         scr.close();
     }
-    public static void GenerateQuestion(int a, int b, Scanner scr)
+    public static void GenerateQuestion(int a, int b, Scanner scr, int response)
     {
 
         int total = a * b;
@@ -32,14 +34,56 @@ public class problem1 {
         ans = scr.nextInt();
         if(ans == total)
         {
-            println("Very good!");
+            switch(response)
+            {
+                case 1 :
+                    println("Very good!");
+                    break;
+
+                case 2 :
+                    println("Excellent!");
+                    break;
+
+                case 3 :
+                    println("Nice work!");
+                    break;
+
+                case 4 :
+                    println("Keep up the good work!");
+                    break;
+
+                default :
+                    println("ERROR WRONG NUMBER");
+            }
+
             //scr.close();
             //return();
         }
 
         while (ans != total)
         {
-            println("No. Please try again.");
+            switch(response)
+            {
+                case 1 :
+                    println("No. Please try again.");
+                    break;
+
+                case 2 :
+                    println("Wrong. Try once more.");
+                    break;
+
+                case 3 :
+                    println("Don’t give up!");
+                    break;
+
+                case 4 :
+                    println("No. Keep trying.");
+                    break;
+
+                default :
+                    println("ERROR WRONG NUMBER");
+            }
+
             println("How much is " + a + " times " + b);
             ans = scr.nextInt();
         }

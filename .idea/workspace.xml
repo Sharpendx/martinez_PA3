@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d587bd2b-9671-4a70-bae1-8abfe9ba95da" name="Default Changelist" comment="" />
+    <list default="true" id="04adfb81-a882-4d55-a371-9c2812c8e07c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1RwSI8PrlBgXozd7pE28gqvusvy" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1RwSBcg1ArOJzd0v6zXyjxghzOt" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -36,31 +28,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="problem1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problem1" />
-      <module name="martinez_p1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.problem1" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d587bd2b-9671-4a70-bae1-8abfe9ba95da" name="Default Changelist" comment="" />
-      <created>1570576582653</created>
+      <changelist id="04adfb81-a882-4d55-a371-9c2812c8e07c" name="Default Changelist" comment="" />
+      <created>1570576531300</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570576582653</updated>
-      <workItem from="1570576587423" duration="122000" />
+      <updated>1570576531300</updated>
+      <workItem from="1570576534267" duration="52000" />
     </task>
     <servers />
   </component>

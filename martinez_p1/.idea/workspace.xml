@@ -23,6 +23,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570576582653</updated>
       <workItem from="1570576587423" duration="122000" />
+      <workItem from="1570628940528" duration="3171000" />
     </task>
     <servers />
   </component>
@@ -72,7 +74,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

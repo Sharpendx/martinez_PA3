@@ -13,9 +13,10 @@ public class problem1 {
         int b;
         int response;
         int numAnsRight = 0;
-        int numAns = 0;
+        double numAns = 0;
         double percentNeeded = 0.75;
         double percentActual = 0.0;
+        boolean ansCorrect;
 
         println("Welcome to our Math learning program!");
         println("Please select a difficulty level enter either 1, 2, or 3");
@@ -27,12 +28,23 @@ public class problem1 {
             response = random.nextInt(4) + 1;
             a = random.nextInt(9) + 1;
             b = random.nextInt(9) + 1;
-            numAns += GenerateQuestionLvlOne(a,b,scr,response);
-            println("You have answered " + numAns + " times.");
-            if(numAns == 10)
+            ansCorrect = GenerateQuestionMult(a,b,scr,response);
+            if(ansCorrect == true)
             {
                 numAnsRight++;
+                numAns++;
+            }
+
+            if(ansCorrect != true)
+            {
+                numAns++;
+            }
+
+            if(numAns == 10)
+            {
                 percentActual = numAnsRight / numAns;
+                println("" + percentActual);
+                println("" + percentNeeded);
                 if(percentActual >= percentNeeded)
                 {
                     println("Congratulations, you are ready to go to the next level!");
@@ -45,19 +57,27 @@ public class problem1 {
                 }
 
             }
-            numAnsRight++;
-
+            println("You've gotten " + numAnsRight + "so far");
         }
         while(lvl == 2)
         {
             response = random.nextInt(4) + 1;
-            a = random.nextInt(9) + 1;
-            b = random.nextInt(9) + 1;
-            numAns += GenerateQuestionLvlOne(a,b,scr,response);
-            println("You have answered " + numAns + " times.");
-            if(numAns == 10)
+            a = random.nextInt(99) + 1;
+            b = random.nextInt(99) + 1;
+            ansCorrect = GenerateQuestionMult(a,b,scr,response);
+            if(ansCorrect == true)
             {
                 numAnsRight++;
+                numAns++;
+            }
+
+            if(ansCorrect != true)
+            {
+                numAns++;
+            }
+            //println("You have answered " + numAns + " times.");
+            if(numAns == 10)
+            {
                 percentActual = numAnsRight / numAns;
                 if(percentActual >= percentNeeded)
                 {
@@ -71,13 +91,10 @@ public class problem1 {
                 }
 
             }
-            numAnsRight++;
-
         }
-
         scr.close();
     }
-    public static int GenerateQuestionLvlOne(int a, int b, Scanner scr, int response)
+    public static boolean GenerateQuestionMult(int a, int b, Scanner scr, int response)
     {
 
         int total = a * b;
@@ -111,10 +128,10 @@ public class problem1 {
                     println("ERROR WRONG NUMBER");
                     break;
             }
-            return(numAns);
+            return(true);
         }
 
-        while (ans != total)
+        if (ans != total)
         {
             numAns++;
             switch(response)
@@ -140,11 +157,8 @@ public class problem1 {
                     break;
             }
 
-            println("How much is " + a + " times " + b);
-
-            ans = scr.nextInt();
         }
-        return(numAns);
+        return(false);
     }
     public static void print(String s)
     {

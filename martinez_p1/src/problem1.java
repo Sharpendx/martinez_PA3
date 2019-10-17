@@ -1,6 +1,6 @@
 import java.security.SecureRandom;
 import java.util.Scanner;
-
+import java.math.RoundingMode;
 public class problem1 {
 
     public static void main(String args[])
@@ -509,8 +509,8 @@ public class problem1 {
         double ans = 0;
         int numAns = 0;
         println("How much is " + a + " divided by " + b);
-
-        ans = scr.nextDouble();
+        println("Please round to two decimal places.");
+        ans = (Math.round(scr.nextDouble() * 100.0))/100;
         if(ans == total)
         {
             numAns++;
